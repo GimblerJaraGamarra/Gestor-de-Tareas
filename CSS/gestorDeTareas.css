@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  /* max-width: 1200px; */
+  height: 100%;
+  /* max-height: 70vh; */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.new-task {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.new-task input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.new-task button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-task button:hover {
+  background-color: #0056b3;
+}
+
+.boards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contenedor-board {
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  max-height: 82vh;
+  text-align: center;
+}
+
+.board {
+  width: 100%;
+  padding-right: 9px;
+  max-height: 89%;
+  overflow: auto;
+}
+
+.board h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-list {
+  height: 62vh;
+  /* background-color: red; */
+}
+
+.task {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* cursor: move; */
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#btnEdit {
+  display: none;
+}

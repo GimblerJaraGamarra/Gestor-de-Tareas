@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="./CSS/gestorDeTareas.css" />
+    <script
+      src="https://kit.fontawesome.com/3d156103f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestión de Tareas</h1>
+
+      <div class="new-task">
+        <input type="text" id="taskInput" placeholder="Nueva tarea..." />
+        <button onclick="addTask()" id="btnAdd">Agregar Tarea</button>
+        <button onclick="updateTask()" id="btnEdit">Modificar Tarea</button>
+      </div>
+
+      <div class="boards">
+        <div class="contenedor-board">
+          <h2>Pendiente</h2>
+          <hr />
+          <div class="board" id="pending">
+            <div class="task-list" id="pending-tasks"></div>
+          </div>
+        </div>
+
+        <div class="contenedor-board">
+          <h2>En Proceso</h2>
+          <hr />
+          <div class="board" id="in-progress">
+            <div class="task-list" id="in-progress-tasks"></div>
+          </div>
+        </div>
+
+        <div class="contenedor-board">
+          <h2>En Revisión</h2>
+          <hr />
+          <div class="board" id="in-review">
+            <div class="task-list" id="in-review-tasks"></div>
+          </div>
+        </div>
+
+        <div class="contenedor-board">
+          <h2>Finalizado</h2>
+          <hr />
+          <div class="board" id="done">
+            <div class="task-list" id="done-tasks"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./JS/gestorDeTareas.js"></script>
+</html>
